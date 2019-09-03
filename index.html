@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #cover {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      background: #fff url('images/spinner.gif') center no-repeat;
+    }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Alley Cats</title>
+  <link rel="icon" href="images/paw.svg" type="image/png" />
+  <!-- Milligram and dependencies-->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic|Miltonian" />
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="milligram.min.css" />
+  <!-- Custom code-->
+  <link rel="stylesheet" href="alleycats.css" />
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <!--Font Awesome -->
+  <link href="fonts/fontawesome/css/all.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div id="cover"></div>
+
+  <div id="background-container">
+    <div id="stars"></div>
+    <div id="clouds"></div>
+  </div>  <!-- end background container -->
+
+  <div class="container">
+    <nav id="navigation" class="row">
+      <div class="column">
+        <a href="#" onclick="toggle('home')"> Home </a>
+      </div>
+      <div class="column">
+        <a href="#" onclick="toggle('about')"> About </a>
+      </div>
+      <div class="column">
+        <a href="#" onclick="toggle('band')"> Band </a>
+      </div>
+      <div class="column">
+        <a href="#" onclick="toggle('gigs')"> Gigs </a>
+      </div>
+      <div class="column">
+        <a href="#" onclick="toggle('media')"> Media </a>
+      </div>
+      <div class="column">
+        <a href="#" onclick="toggle('contact')"> Contact </a>
+      </div>
+    </nav>     <!-- end row -->
+
+    <div id="content" class="row">
+      <div class="column ">
+        <section id="home" class="row">
+          <div id="home-left" class="column">
+            <h1>The Alley Cats</h1>
+            <div class="divider"><img src="images/dividers/divider.png" alt="divider" /></div>
+            <p>
+              Seven-piece modern jazz band performing fresh, fun and modern
+              arrangements of well-known tunes from classic children's films,
+              TV themes, Disney, nursery rhymes and more!
+            </p>
+          </div>
+          <div id="home-right">
+            <!-- This isn't a column, so the div just fits the image. It does NOT flex to take up spare space shared with left-hand side -->
+            <img id="alley-cats" src="images/alley-cats-web.jpg" alt="The Alley Cats" />
+          </div>
+        </section>
+
+        <section id="about" class="invisible">
+
+          <img src="images/about.jpg" class="banner-photo" alt="The Alley Cats at Storey's Field Centre" />
+          <div class="photo-credit right">Trevor Lee Photography</div>
+
+          <h2>About the band</h2>
+
+          <h3>A nostalgic musical treat for all ages!</h3>
+
+          <p>
+            The Alley Cats are a seven-piece jazz band based in Cambridge. We play fun, original arrangements of
+            well-known tunes from classic children's films, TV themes, Disney, nursery rhymes and more. From swing
+            to salsa to samba, funk, ska and reggae!
+          </p>
+          <p>
+            Our music is appealing to all ages and we can adapt our set to suit the occasion. Get ready to tap your
+            feet to songs from The Jungle Book, Mary Poppins, Willy Wonka & the Chocolate Factory, Frozen, Dumbo,
+            Aladdin and Monsters Inc, to name just a few! We often have face painting, colouring-in, balloons and
+            sweets to make our gigs a fun occasion for all.
+          </p>
+
+          <div class="divider"><img src="images/dividers/divider.png" alt="divider" /></div>
+
+
+
+          <div class="card">
+
+            <div id="history" class="card-photo-left">
+              <img src="images/history.jpg" alt="Wolf head on double bass" /> </a>
+              <div class="photo-credit">Dominika Miechowska</div>
+            </div>
+
+            <div class="card-text">
+              <h3>History</h3>
+              <p>The Alley Cats grew out of a band which was put together to play at the East Anglia Children’s Hospice
+                in Milton, Cambridge, as part of their music therapy programme. The
+                children loved all the Disney tunes that the group played, and so the idea for a family-friendly band
+                playing much-loved songs from film and TV was born. We are proud to continue supporting EACH in their
+                work.</p>
+
+              <p>The band is led by Vicki Kenny, who is a music therapist, educator and jazz musician. She has worked
+                for many years
+                with children teaching jazz and improvisation. Her passion is music and performing, and introducing jazz
+                to a younger
+                audience.
+              </p>
+
+              <p>We have performed in and around Cambridge, at a number of family events, festivals and jazz venues.
+                Highlights include the <em>2017 Cambridge International Jazz Festival</em>, Cambridge City Council's
+                annual <em>Mayor's Day Out</em>, and playing to a packed Jesus Green as part of the <em>Jazz and Brass
+                  in the
+                  Parks</em> programme, with special guest and award-winning Saxophonist Alan Barnes.</p>
+
+              <p>With an eye to the future, the band are excited to be able to work with the king of funk trombone,
+                Dennis Rollins, at this year's <em>2018 Cambridge International Jazz Festival</em>.</p>
+
+            </div>
+
+          </div> <!-- end card -->
+
+        </section>
+
+        <section id="band" class="invisible">
+          <h2>Meet the band</h2>
+
+          <div class="card">
+
+            <div id="alastair" class="card-photo-left">
+              <a href="images/profiles/alastair.jpg" data-fancybox="people" data-caption="Alastair Appleton"> <img
+                  src="images/profiles/alastair.jpg" alt="Alastair Appleton" /> </a>
+              <div class="photo-credit">Trevor Lee Photography</div>
+            </div>
+
+            <div class="card-text">
+              <h3>Alastair Appleton &mdash; saxophone</h3>
+              <p>Alastair works for the University as a software developer, and is a keen jazz saxophonist in his spare
+                time.</p>
+              <p>Alongside the Alley Cats, Alastair performs with <a href="https://www.irokoband.co.uk">Iroko</a>
+                &mdash;
+                a
+                drum-led fusion group playing classic Afrobeat music, original compositions, and reinterpretations of
+                jazz
+                standards superimposed on rhythms from around Africa and South America.</p>
+              <p>He is a member of <a href="http://www.betterthantv.co.uk/">Better Than TV</a>, a modern jazz group
+                which
+                draws on a wide range of styles and influences, and explores eclectic and novel instrumentation.</p>
+              <p>Alastair also does occasional ad-hoc work in various small groups, performing at weddings and corporate
+                functions, and he can often be found down one of the local jazz jam sessions.</p>
+              <a href="https://www.alastairappleton.com">www.alastairappleton.com</a>
+            </div>
+
+          </div> <!-- end card -->
+
+
+          <div class="divider"><img src="images/dividers/divider.png" alt="divider" /></div>
+
+
+          <div class="card">
+
+            <div id="simon" class="card-photo-left">
+              <a href="images/profiles/simon.jpg" data-fancybox="people" data-caption="Simon Fothergill"><img
+                  src="images/profiles/simon.jpg" alt="Simon Fothergill" /></a>
+              <div class="photo-credit">Trevor Lee Photography</div>
+            </div>
+
+            <div class="card-text">
+              <h3>Simon Fothergill &mdash; trombone</h3>
+              <p>Simon plays a wide range of classical, folk and jazz music on piano, trombone, recorder and didgeridoo.
+                He performs with many groups in and around Cambridgeshire, including the Cambridge
+                Graduate Orchestra, <a href="http://www.betterthantv.co.uk/">Better Than TV</a>, <a
+                  href="http://www.harmonyinharlem.co.uk/">Harmony in Harlem</a>, the Linton Jazz Orchestra, and Malcom
+                Talbot's Big Brass community jazz big band.</p>
+            </div>
+
+          </div> <!-- end card -->
+
+          <div class="divider"><img src="images/dividers/divider2.png" alt="divider" /></div>
+
+          <div class="card">
+
+            <div id="jane" class="card-photo-left">
+              <a href="images/profiles/jane.jpg" data-fancybox="people" data-caption="Jane Hollingworth"><img
+                  src="images/profiles/jane.jpg" alt="Jane Hollingworth" /></a>
+              <div class="photo-credit">Trevor Lee Photography</div>
+            </div>
+
+            <div class="card-text">
+              <h3>Jane Hollingworth &mdash; percussion</h3>
+              <p></p>
+            </div>
+
+          </div> <!-- end card -->
+
+          <div class="divider"><img src="images/dividers/divider5.png" alt="divider" /></div>
+
+          <div class="card">
+
+            <div id="vicki" class="card-photo-left">
+              <a href="images/profiles/vicki.jpg" data-fancybox="people" data-caption="Vicki Kenny"><img
+                  src="images/profiles/vicki.jpg" alt="Vicki Kenny" /></a>
+            </div>
+
+            <div class="card-text">
+              <h3>Vicki Kenny &mdash; piano</h3>
+              <p>Vicki is a music therapist, as well as a jazz musician. She has worked for many years with children
+                teaching jazz and improvisation. Her passion is music and performing, and introducing jazz to a younger
+                audience.</p>
+              <p><a href="www.vickikenny.co.uk/">www.vickikenny.co.uk</a></p>
+            </div>
+
+          </div> <!-- end card -->
+
+          <div class="divider"><img src="images/dividers/divider.png" alt="divider" /></div>
+
+          <div class="card">
+
+
+            <div id="giulio" class="card-photo-left">
+              <a href="images/profiles/giulio.jpg" data-fancybox="people" data-caption="Giulio Lampronti"><img
+                  src="images/profiles/giulio.jpg" alt="Jane Hollingworth" /></a>
+              <div class="photo-credit">Dominika Miechowska</div>
+            </div>
+
+            <div class="card-text">
+              <h3>Giulio Lampronti &mdash; bass</h3>
+              <p>Upright and electric bassist and guitarist, Giulio Isacco Lampronti received a degree in jazz with full
+                marks at the
+                Conservatory "G.B. Martini" of Bologna (Italy) and also holds a PhD in Mineralogy. He's currently a
+                research technician at the
+                Department of Earth Sciences, University of Cambridge, but you'll also see him regularly play at many
+                venues in Cambridge
+                with Cores do Samba, The Andy Bowie Quartet, David Ellingham’s Fromage a Trois, and Rcubed.</p>
+            </div>
+
+          </div> <!-- end card -->
+
+          <div class="divider"><img src="images/dividers/divider2.png" alt="divider" /></div>
+
+          <div class="card">
+
+            <div id="ros" class="card-photo-left">
+              <a href="images/profiles/ros.jpg" data-fancybox="people" data-caption="Ros Russell"><img
+                  src="images/profiles/ros.jpg" alt="Ros Russell" /></a>
+              <div class="photo-credit">Alison Kenny</div>
+            </div>
+
+            <div class="card-text">
+              <h3>Ros Russell &mdash; vocals</h3>
+              <p></p>
+            </div>
+
+          </div> <!-- end card -->
+
+          <div class="divider"><img src="images/dividers/divider5.png" alt="divider" /></div>
+
+          <div class="card">
+
+            <div id="paul" class="card-photo-left">
+              <a href="images/profiles/paul.jpg" data-fancybox="people" data-caption="Paul Stubbs"><img
+                  src="images/profiles/paul.jpg" alt="Paul Stubbs" /></a>
+              <div class="photo-credit">Trevor Lee Photography</div>
+            </div>
+
+            <div class="card-text">
+              <h3>Paul Stubbs &mdash; trumpet</h3>
+              <p></p>
+            </div>
+
+          </div> <!-- end card -->
+
+
+        </section>
+
+        <section id="gigs" class="invisible">
+          <h2>Gigs</h2>
+          <p>
+            We perform in and around Cambridge, at a number of family events, local festivals and jazz venues. We also
+            do community-based and charitable work with groups including the East Anglia Children's Hospice. Here are
+            details of some of our upcoming and
+            previous performances.
+          </p>
+
+          <h3>Upcoming gigs</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td>16 November 2019</td>
+                <td>The Alley Cats <strong>with special guest Dennis Rollins</strong> at <a
+                    href="https://www.cambridgejazzfestival.info/the-alley-cats"><em>
+                      Cambridge International Jazz
+                      Festival</em></a>. Storey's Field Centre, Cambridge.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="divider"><img src="images/dividers/divider.png" alt="divider" /></div>
+
+          <h3>Previous gigs</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td>August 2019</td>
+                <td><a href="https://www.cambridgelive.org.uk/city-events/events/mayors-day-out-0"><em>
+                      Cambridge City Council Mayor's Day
+                      Out
+                    </em></a>, Great Yarmouth.</td>
+              </tr>
+              <tr>
+                <td>August 2019</td>
+                <td>Private function. Wissington, Suffolk. </td>
+              </tr>
+              <tr>
+                <td>June 2019</td>
+                <td>Hot Numbers caf&eacute;, Cambridge.</td>
+              </tr>
+              <tr>
+                <td>June 2019</td>
+                <td>The <em>Wild Wood Rumpus</em> family festival, Linton.</td>
+              </tr>
+              <tr>
+                <td>November 2018</td>
+                <td><em>Cambridge International Jazz Festival</em>. Storey's Field Centre, Cambridge.</td>
+              </tr>
+              <tr>
+                <td>September 2018</td>
+                <td>The Alley Cats with special guest Alan Barnes. <em>Jazz and Brass in the Parks</em>, Cambridge.</td>
+              </tr>
+              <tr>
+                <td>June 2018</td>
+                <td><em>F&ecirc;te de la Musique</em>, Saffron Walden.</td>
+              </tr>
+              <tr>
+                <td>April 2018</td>
+                <td>Hot Numbers caf&eacute;, Cambridge.</td>
+              </tr>
+              <tr>
+                <td>September 2017</td>
+                <td>Charity fire walk and fundraising event for East Anglia Children's Hospice, Milton.</td>
+              </tr>
+              <tr>
+                <td>September 2017</td>
+                <td>Private function. Cambridge.</td>
+              </tr>
+              <tr>
+                <td>August 2017</td>
+                <td><em>EACHFEST</em>, East Anglia Children’s Hospice, Milton.</td>
+              </tr>
+              <tr>
+                <td>July 2017</td>
+                <td><em>WillowFest</em> family festival. The Willow Tree, Bourn.</td>
+              </tr>
+              <tr>
+                <td>May 2017</td>
+                <td>The Willow Tree, Bourn.</td>
+              </tr>
+              <tr>
+                <td>March 2017</td>
+                <td>Fundraising event for East Anglia Children's Hospice. Hot Numbers caf&eacute;, Cambridge.</td>
+              </tr>
+              <tr>
+                <td>August 2016</td>
+                <td><em>EACHFEST</em>, East Anglia Children’s Hospice, Milton.</td>
+              </tr>
+              <tr>
+                <td>January 2016</td>
+                <td>Music therapy performance at East Anglia Children’s Hospice, Milton.</td>
+              </tr>
+
+
+            </tbody>
+          </table>
+
+        </section>
+
+        <section id="media" class="invisible">
+          <h2>Media</h2>
+          <h3>Watch</h3>
+          <p>We recently recorded a new video at <a href="http://saltwellstudio.co.uk/">Saltwell Studio</a>, showcasing
+            some of our best material. Check it out below, and give us a "like" on YouTube!</p>
+
+          <div id="showreel">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/YhxU9_Cjo2Y" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="divider"><img src="images/dividers/divider.png" alt="divider" /></div>
+
+          <h3>Listen</h3>
+          <div class="row soundcloud">
+            <div id="i-wanna-be-like-you" class="column">
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/661309070&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+
+            <div id="under-the-sea" class="column">
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/661308227&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+
+            <div id="when-i-see-an-elephant-fly" class="column">
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/661310891&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+          </div>
+
+          <div class="divider"><img src="images/dividers/divider2.png" alt="divider" /></div>
+
+          <h3>Gallery</h3>
+
+          <div class="gallery">
+
+            <a href="images/gallery/gallery001.jpg" data-fancybox="gallery"
+              data-caption="(Credit: Dominika Miechowska)">
+              <img src="images/gallery/thumb001.jpg" alt="Mask and feathers" />
+            </a>
+
+            <a href="images/gallery/gallery002.jpg" data-fancybox="gallery"
+              data-caption="Jane Hollingworth and Gavin Spence at Hot Numbers (Credit: Dominika Miechowska)">
+              <img src="images/gallery/thumb002.jpg" alt="Jane Hollingworth and Gavin Spence at Hot Numbers" />
+            </a>
+
+            <a href="images/gallery/gallery003.jpg" data-fancybox="gallery"
+              data-caption="Ros Russell (Credit: Dominika Miechowska)">
+              <img src="images/gallery/thumb003.jpg" alt="Ros Russell" />
+            </a>
+
+            <a href="images/gallery/gallery004.jpg" data-fancybox="gallery"
+              data-caption="The Alley Cats at Hot Numbers (Credit: Dominika Miechowska)">
+              <img src="images/gallery/thumb004.jpg" alt="The Alley Cats at Hot Numbers" />
+            </a>
+
+            <div class="gallery-item">
+              <a href="images/gallery/gallery005.jpg" data-fancybox="gallery"
+                data-caption="(Credit: Dominika Miechowska)">
+                <img src="images/gallery/thumb005.jpg" alt="Playing drums at Hot Numbers" />
+              </a>
+            </div>
+
+            <a href="images/gallery/gallery006.jpg" data-fancybox="gallery"
+              data-caption="(Credit: Dominika Miechowska)">
+              <img src="images/gallery/thumb006.jpg" alt="Alley Cats sign and balloon" />
+            </a>
+
+            <a href="images/gallery/gallery007.jpg" data-fancybox="gallery"
+              data-caption="Vicki Kenny at Hot Numbers (Credit: Dominika Miechowska)">
+              <img src="images/gallery/thumb007.jpg" alt="Vicki Kenny at Hot Numbers" />
+            </a>
+
+            <a href="images/gallery/gallery008.jpg" data-fancybox="gallery"
+              data-caption="(Credit: Dominika Miechowska)">
+              <img src="images/gallery/thumb008.jpg" alt="Colouring in" />
+            </a>
+
+            <a href="images/gallery/gallery009.jpg" data-fancybox="gallery" data-caption="">
+              <img src="images/gallery/thumb009.jpg" alt="Stripy socks and shoes with red bows" />
+            </a>
+
+            <a href="images/gallery/gallery010.jpg" data-fancybox="gallery"
+              data-caption="Paul Stubbs (Credit: Trevor Lee)">
+              <img src="images/gallery/thumb010.jpg" alt="Paul Stubbs playing trumpet" />
+            </a>
+
+            <a href="images/gallery/gallery011.jpg" data-fancybox="gallery"
+              data-caption="Ros Russell (Credit: Trevor Lee)">
+              <img src="images/gallery/thumb011.jpg" alt="Ros Russell singing" />
+            </a>
+
+            <a href="images/gallery/gallery012.jpg" data-fancybox="gallery" data-caption="The King of the Swingers">
+              <img src="images/gallery/thumb012.jpg" alt="Stripy monkey toy" />
+            </a>
+
+            <a href="images/gallery/gallery013.jpg" data-fancybox="gallery"
+              data-caption="Giulio Lampronti at Saltwell Studio">
+              <img src="images/gallery/thumb013.jpg" alt="Giulio Lampronti playing bass" />
+            </a>
+
+            <a href="images/gallery/gallery014.jpg" data-fancybox="gallery"
+              data-caption="Joe Taylor at Saltwell Studio">
+              <img src="images/gallery/thumb014.jpg" alt="Joe Taylor playing drums" />
+            </a>
+
+            <a href="images/gallery/gallery015.jpg" data-fancybox="gallery"
+              data-caption="The Alley Cats at Saltwell Studio">
+              <img src="images/gallery/thumb015.jpg" alt="The Alley Cats at Saltwell Studio" />
+            </a>
+
+            <a href="images/gallery/gallery016.jpg" data-fancybox="gallery"
+              data-caption="Simon Fothergill at Saltwell Studio">
+              <img src="images/gallery/thumb016.jpg" alt="Simon Fothergill at Saltwell Studio" />
+            </a>
+
+            <a href="images/gallery/gallery017.jpg" data-fancybox="gallery" data-caption="The Wild Wood Rumps">
+              <img src="images/gallery/thumb017.jpg" alt="Chalk board sign at the Wild Wood Rumpus" />
+            </a>
+
+            <a href="images/gallery/gallery018.jpg" data-fancybox="gallery" data-caption="Jane Hollingworth">
+              <img src="images/gallery/thumb018.jpg" alt="Jane Hollingworth at the Britannia Theatre" />
+            </a>
+
+            <a href="images/gallery/gallery019.jpg" data-fancybox="gallery"
+              data-caption="Britannia Theatre, Great Yarmouth">
+              <img src="images/gallery/thumb019.jpg" alt="The stage at the Britannia Theatre" />
+            </a>
+
+          </div>
+        </section>
+
+        <section id="contact" class="invisible">
+
+
+          <div class="card">
+
+
+
+            <div class="card-text">
+
+              <h2>Contact</h2>
+              <p>We are based in Cambridge, and can travel within the south-east of England to play at your event.</p>
+
+              <p>To learn more about the Alley Cats, or to book us, please <a
+                  href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#105;&#99;&#107;&#105;&#95;&#107;&#101;&#110;&#110;&#121;&#64;&#104;&#111;&#116;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">email
+                  Vicki Kenny</a></p>
+
+              <p></p>We look forward to hearing from you!</p>
+
+            </div>
+
+            <div id="contact" class="card-photo-right">
+              <img src="images/contact.jpg" alt="Keyboard and headphones" />
+            </div>
+
+          </div> <!-- end card -->
+
+        </section>
+      </div>
+      <!--end content panel-->
+    </div>
+    <!--end row (for content panel)-->
+
+    <footer id="footer">
+      <div class="footer-item">
+        <a href="https://www.facebook.com/alleycatsjazz"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <div class="footer-item">
+        <a href="https://www.soundcloud.com/alleycatsjazz"><i class="fab fa-soundcloud"></i></a>
+      </div>
+      <div class="footer-item">
+        <a
+          href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#105;&#99;&#107;&#105;&#95;&#107;&#101;&#110;&#110;&#121;&#64;&#104;&#111;&#116;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><i
+            class="fas fa-envelope"></i></a>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </div>
+  <!--end container (was wrapper)-->
+
+  <script src="alleycats.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script>$(window).on('load', function () {
+      $("#cover").fadeOut(500);
+    });</script>
+
+  <script>
+    $('[data-fancybox]').fancybox({
+      buttons: [
+        "zoom",
+        "close",
+      ],
+      loop: true,
+    });
+  </script>
+
+</body>
+
+</html>

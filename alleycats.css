@@ -1,0 +1,372 @@
+/*****************************************/
+/*  Global settings                      */
+/*  (including Milligram overrides)      */
+/*****************************************/
+
+body {
+  overflow-y: scroll;
+}
+
+.invisible {
+  display: none;
+}
+
+.container {
+  z-index: 100;
+}
+
+@media (min-width: 640px) {
+  .row {
+    flex-direction: row;
+    margin-left: -1rem;
+    width: calc(100% + 2rem);
+  }
+  .row .column {
+    margin-bottom: inherit;
+    padding: 0 1rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Miltonian;
+  color: #363636;
+  margin-top: 0.5em; /* changed from 0 in Milligram */
+}
+
+img {
+  border-radius: 10px;
+  width: 640px; /* This is the mobile breakpoint width. Images less than 640px will grow if needs be. */
+}
+
+@media (max-width: 639px) {
+  img {
+    width: 100%;
+  }
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+/*****************************************/
+/* Background container                  */
+/*****************************************/
+
+#background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#stars {
+  background: url("images/stars.png"),
+    linear-gradient(
+      165deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(17, 0, 51, 1) 30%,
+      rgb(53, 41, 141) 100%
+    );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 10;
+}
+
+#clouds {
+  width: 3970px; /* double the width of the cloud image */
+  height: 100%;
+  background: transparent url("images/clouds3.png");
+  background-size: auto;
+  position: absolute;
+  right: 0; /* Set right only (no left) so clouds start in middle of screen, and do not "jump" back at the end of the animation cycle */
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  animation: move-clouds 30s linear infinite;
+}
+
+@keyframes move-clouds {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(
+      1985px,
+      0px,
+      0px
+    ); /* width of the cloud image */
+  }
+}
+
+#background-container img {
+  height: 40vh;
+  width: 40vh;
+  filter: opacity(80%);
+  position: absolute;
+  z-index: 15;
+  top: 20px;
+  right: 20px;
+}
+
+/*****************************************/
+/* Nav bar                               */
+/*****************************************/
+
+/* Note: must use an ID and not just use the 'nav' element selector, otherwise the Milligram row and column settings will override anything we do here */
+
+#navigation {
+  background-color: rgba(50, 50, 50, 0.75);
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 1em;
+}
+
+@media (min-width: 640px) {
+  #navigation {
+    margin-top: calc(
+      100vh / 20
+    ); /* push nav bar down page a bit more on tablet and desktop */
+  }
+}
+
+#navigation a {
+  font-family: Miltonian;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#navigation div a:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 15px #fff;
+}
+
+@media (min-width: 640px) {
+  #navigation {
+    padding: 1em 0;
+  }
+}
+
+/*****************************************/
+/*  Content panel                        */
+/*****************************************/
+
+#content {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 1em;
+  padding: 1em; /* let content breathe a little on mobile */
+}
+
+@media (min-width: 640px) {
+  #content {
+    margin-top: calc(
+      100vh / 40
+    ); /* push content panel down page a bit more on tablet and desktop */
+    padding: 0.5em;
+  }
+}
+
+/*****************************************/
+/*  Home                                 */
+/*****************************************/
+
+#home-left {
+  margin: auto 0;
+  max-height: 3500px;
+  padding: 0;
+  text-align: center;
+}
+
+#home-left .divider {
+  display: none;
+}
+
+#home-left p {
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
+@media (min-width: 640px) {
+  #home-left {
+    text-align: left;
+    margin: auto 1em;
+  }
+}
+
+@media (min-width: 750px) {
+  #home-left .divider {
+    display: block; /* Only show the divider on the homepage if the window is big enough */
+    text-align: left;
+  }
+}
+
+section#about .banner-photo {
+  width: 100%;
+}
+
+/*****************************************/
+/*  Band                                 */
+/*****************************************/
+
+.card {
+  margin-bottom: 2em;
+}
+
+.photo-credit {
+  font-size: 0.7em;
+  padding-right: 0.5em;
+  text-align: left;
+  font-style: italic;
+}
+
+.right {
+  text-align: right;
+}
+
+.divider {
+  text-align: center;
+  padding: 2em 0;
+  width: 100%;
+}
+
+.divider img {
+  max-width: 100px;
+  filter: opacity(40%); /* make the black dividers grey */
+}
+
+@media (min-width: 640px) {
+  .card {
+    display: flex; /* only flex on tablet and desktop */
+  }
+
+  .card-text {
+    flex: 1;
+  }
+
+  .card .card-photo-left {
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+    max-width: 250px;
+    min-width: 250px;
+  }
+
+  .card .card-photo-right {
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    max-width: 250px;
+    min-width: 250px;
+  }
+}
+
+/*****************************************/
+/*  Media                                */
+/*****************************************/
+
+.row.soundcloud {
+  flex-wrap: wrap;
+}
+
+@media (min-width: 640px) {
+  .soundcloud .column {
+    max-width: 50%; /* Put two SoundCloud tracks in a row on tablet and desktop */
+  }
+}
+
+@media (max-width: 639px) {
+  .gallery {
+    max-height: 1000px;
+    overflow-y: scroll;
+  }
+}
+
+@media (min-width: 640px) {
+  .gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+/*****************************************/
+/*  Gigs                                 */
+/*****************************************/
+
+section#gigs tr td:first-child {
+  min-width: 20%;
+}
+
+section#gigs tr td {
+  vertical-align: top;
+}
+
+/*****************************************/
+/*  Contact                              */
+/*****************************************/
+
+section#contact .card {
+  margin-bottom: 0;
+}
+
+section#contact .card .card-photo-right {
+  margin-top: 0.5em;
+}
+
+/*****************************************/
+/*  Footer bar                           */
+/*****************************************/
+
+#footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  #footer {
+    margin-top: calc(
+      100vh / 40
+    ); /* push down page a bit more on tablet and desktop */
+    margin-bottom: calc(
+      100vh / 40
+    ); /* push down page a bit more on tablet and desktop */
+  }
+}
+
+.footer-item {
+  display: inline-block;
+  padding: 1.3em;
+}
+
+.footer-item a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.7em;
+}
+
+.footer-item a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-item a:hover i.fa-facebook-f {
+  color: #179dd6;
+  text-shadow: 0 0 15px #fff;
+}
+
+.footer-item a:hover i.fa-soundcloud {
+  color: #ff5714;
+  text-shadow: 0 0 15px #fff;
+}
+
+.footer-item a:hover i.fa-envelope {
+  color: #ffb800;
+  text-shadow: 0 0 15px #fff;
+}
