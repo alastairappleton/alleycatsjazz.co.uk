@@ -215,6 +215,10 @@ section#about .banner-photo {
   width: 100%;
 }
 
+.testimonial-credit {
+  text-align: right;
+}
+
 /*****************************************/
 /*  Band                                 */
 /*****************************************/
@@ -366,7 +370,13 @@ section#contact .card .card-photo-right {
   text-shadow: 0 0 15px #fff;
 }
 
+.footer-item a:hover i.fa-instagram {
+  color: #e1306c;
+  text-shadow: 0 0 15px #fff;
+}
+
 .footer-item a:hover i.fa-envelope {
   color: #ffb800;
   text-shadow: 0 0 15px #fff;
 }
+
