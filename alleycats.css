@@ -211,6 +211,11 @@ table tr:last-child td {
   }
 }
 
+
+/*****************************************/
+/*  About                                */
+/*****************************************/
+
 section#about .banner-photo {
   width: 100%;
 }
@@ -218,6 +223,7 @@ section#about .banner-photo {
 .testimonial-credit {
   text-align: right;
 }
+
 
 /*****************************************/
 /*  Band                                 */
@@ -273,6 +279,7 @@ section#about .banner-photo {
   }
 }
 
+
 /*****************************************/
 /*  Media                                */
 /*****************************************/
@@ -302,6 +309,7 @@ section#about .banner-photo {
   }
 }
 
+
 /*****************************************/
 /*  Gigs                                 */
 /*****************************************/
@@ -314,6 +322,7 @@ section#gigs tr td {
   vertical-align: top;
 }
 
+
 /*****************************************/
 /*  Contact                              */
 /*****************************************/
@@ -325,6 +334,7 @@ section#contact .card {
 section#contact .card .card-photo-right {
   margin-top: 0.5em;
 }
+
 
 /*****************************************/
 /*  Footer bar                           */
@@ -379,4 +389,3 @@ section#contact .card .card-photo-right {
   color: #ffb800;
   text-shadow: 0 0 15px #fff;
 }
-
