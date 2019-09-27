@@ -161,7 +161,7 @@ table tr:last-child td {
 /*  Content panel                        */
 /*****************************************/
 
-#content {
+#content /* use id not 'main' selector otherwise .row class properties will override */ {
   background-color: #fff;
   border-radius: 10px;
   margin-top: 1em;
@@ -211,7 +211,6 @@ table tr:last-child td {
   }
 }
 
-
 /*****************************************/
 /*  About                                */
 /*****************************************/
@@ -223,7 +222,6 @@ section#about .banner-photo {
 .testimonial-credit {
   text-align: right;
 }
-
 
 /*****************************************/
 /*  Band                                 */
@@ -279,7 +277,6 @@ section#about .banner-photo {
   }
 }
 
-
 /*****************************************/
 /*  Media                                */
 /*****************************************/
@@ -309,7 +306,6 @@ section#about .banner-photo {
   }
 }
 
-
 /*****************************************/
 /*  Gigs                                 */
 /*****************************************/
@@ -322,7 +318,6 @@ section#gigs tr td {
   vertical-align: top;
 }
 
-
 /*****************************************/
 /*  Contact                              */
 /*****************************************/
@@ -334,7 +329,6 @@ section#contact .card {
 section#contact .card .card-photo-right {
   margin-top: 0.5em;
 }
-
 
 /*****************************************/
 /*  Footer bar                           */
