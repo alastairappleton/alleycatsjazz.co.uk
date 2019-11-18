@@ -49,6 +49,32 @@
           <table>
             <tbody>
               <tr>
+                <td>6 December 2019</td>
+                <td>
+                  Winter Lights festival at <a href="https://www.nationaltrust.org.uk/anglesey-abbey-gardens-and-lode-mill/features/anglesey-abbey-winter-lights">Anglesey Abbey</a>, Cambridge.
+                </td>
+              </tr>
+                            <tr>
+                <td>8 December 2019</td>
+                <td>
+                  Our second performance at the Winter Lights festival, <a href="https://www.nationaltrust.org.uk/anglesey-abbey-gardens-and-lode-mill/features/anglesey-abbey-winter-lights">Anglesey Abbey</a>, Cambridge.
+                </td>
+              </tr>
+                            <tr>
+                <td>15 December 2019</td>
+                <td>
+                  Come and check out our final performance at the Winter Lights festival, <a href="https://www.nationaltrust.org.uk/anglesey-abbey-gardens-and-lode-mill/features/anglesey-abbey-winter-lights">Anglesey Abbey</a>, Cambridge.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="divider"><img src="images/dividers/divider.png" alt="" /></div>
+
+          <h3>Previous gigs</h3>
+          <table>
+            <tbody>
+              <tr>
                 <td>16 November 2019</td>
                 <td>
                   The Alley Cats <strong>with special guest Dennis Rollins</strong> at <a
@@ -60,14 +86,6 @@
                       Festival</a></em>. Storey's Field Centre, Cambridge.
                 </td>
               </tr>
-            </tbody>
-          </table>
-
-          <div class="divider"><img src="images/dividers/divider.png" alt="" /></div>
-
-          <h3>Previous gigs</h3>
-          <table>
-            <tbody>
               <tr>
                 <td>August 2019</td>
                 <td><a href="https://www.cambridgelive.org.uk/city-events/events/mayors-day-out-0"><em>
