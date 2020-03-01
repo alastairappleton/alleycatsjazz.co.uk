@@ -52,11 +52,23 @@
                         <tbody>
 
                             <tr>
-                                <td>15 December 2019</td>
+                                <td>2 May 2020</td>
                                 <td>
-                                    Come and check out our final performance at the Winter Lights festival, <a
-                                        href="https://www.nationaltrust.org.uk/anglesey-abbey-gardens-and-lode-mill/features/anglesey-abbey-winter-lights">Anglesey
-                                        Abbey</a>, Cambridge.
+                                    Charity event at <a href="https://hotnumberscoffee.co.uk/gwydir-st/">Hot Numbers caf&eacute</a>, Gwydir Street, Cambridge
+                                </td>
+                            </tr>
+
+                                                        <tr>
+                                <td>17 July 2020</td>
+                                <td>
+                                    The Alley Cats perform alongside <strong>special guest Dennis Rollins</strong> at Anglesey Abbey, Lode, nr Cambridge
+                                </td>
+                            </tr>
+
+                                                        <tr>
+                                <td>6 September 2020</td>
+                                <td>
+                                    <em>Jazz and Brass in the Parks</em>, Jesus Green, Cambridge
                                 </td>
                             </tr>
                         </tbody>
@@ -67,6 +79,14 @@
                     <h3>Previous gigs</h3>
                     <table>
                         <tbody>
+                           <tr>
+                                <td>15 December 2019</td>
+                                <td>
+                                    Come and check out our final performance at the Winter Lights festival, <a
+                                        href="https://www.nationaltrust.org.uk/anglesey-abbey-gardens-and-lode-mill/features/anglesey-abbey-winter-lights">Anglesey
+                                        Abbey</a>, Cambridge.
+                                </td>
+                            </tr>
                             <td>8 December 2019</td>
                             <td>
                                 Our second performance at the Winter Lights festival, <a
