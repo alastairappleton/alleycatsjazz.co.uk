@@ -55,7 +55,7 @@
                     href="https://coresdosamba.wixsite.com/brazil">Cores do Samba</a></em>, and plays regularly at
                 The Ivy Restaurant with the <em>Cores do Samba</em> trio and at The Gonville Hotel as a duo for
                 <em><a href="https://www.repmusic.co.uk/">repmusic</a></em>. </p>
-              <p><a href="www.vickikenny.co.uk/">www.vickikenny.co.uk</a></p>
+              <p><a href="http://www.vickikenny.co.uk">www.vickikenny.co.uk</a></p>
             </div>
 
           </div> <!-- end card -->
