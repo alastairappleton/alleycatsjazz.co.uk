@@ -16,8 +16,7 @@
     <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <!--Font Awesome -->
-    <link href="fonts/fontawesome/css/all.min.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -51,24 +50,11 @@
                     <table>
                         <tbody>
 
-                            <tr>
-                                <td>2 May 2020</td>
+                        <tr>
+                            <td><s>6 September 2020</s></td>
                                 <td>
-                                    Charity event at <a href="https://hotnumberscoffee.co.uk/gwydir-st/">Hot Numbers caf&eacute</a>, Gwydir Street, Cambridge
-                                </td>
-                            </tr>
-
-                                                        <tr>
-                                <td>17 July 2020</td>
-                                <td>
-                                    The Alley Cats perform alongside <strong>special guest Dennis Rollins</strong> at Anglesey Abbey, Lode, nr Cambridge
-                                </td>
-                            </tr>
-
-                                                        <tr>
-                                <td>6 September 2020</td>
-                                <td>
-                                    <em>Jazz and Brass in the Parks</em>, Jesus Green, Cambridge
+                                    <s><em>Jazz and Brass in the Parks</em>, Jesus Green, Cambridge</s><br/>
+                                    <span style="color: red;"><i class="fas fa-3x fa-viruses" style="float: left; margin-right: 0.5em;"></i>Sorry. This gig has been cancelled due to the ongoing COVID-19 situation. We hope to play for you again soon though!</span>
                                 </td>
                             </tr>
                         </tbody>
