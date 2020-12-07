@@ -87,7 +87,6 @@
                 draws on a wide range of styles and influences, and explores eclectic and novel instrumentation.</p>
               <p>Alastair also does occasional ad-hoc work in various small groups, performing at weddings and corporate
                 functions, and he can often be found down one of the local jazz jam sessions.</p>
-              <a href="https://www.alastairappleton.com">www.alastairappleton.com</a>
             </div>
 
           </div> <!-- end card -->
