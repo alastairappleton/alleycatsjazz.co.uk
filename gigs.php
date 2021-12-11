@@ -51,10 +51,11 @@
                         <tbody>
 
                         <tr>
-                            <td><s>6 September 2020</s></td>
+                            <td>11&ndash;12 December 2021</td>
                                 <td>
-                                    <s><em>Jazz and Brass in the Parks</em>, Jesus Green, Cambridge</s><br/>
-                                    <span style="color: red;"><i class="fas fa-3x fa-viruses" style="float: left; margin-right: 0.5em;"></i>Sorry. This gig has been cancelled due to the ongoing COVID-19 situation. We hope to play for you again soon though!</span>
+                                    Due to the Covid pandemic, we've been quiet for a long time&hellip; but we are delighted to finally be back playing again at this year's Winter Lights festival, <a
+                                        href="https://www.nationaltrust.org.uk/AAWinterLights">Anglesey
+                                        Abbey</a>, Cambridge.
                                 </td>
                             </tr>
                         </tbody>
