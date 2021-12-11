@@ -36,15 +36,15 @@
 
       <div class="column ">
         <section id="home" class="row">
-          <div id="home-left" class="column" style="text-align: center;">
+          <div id="home-left" class="column" style="text-align: center; padding-left:1em; padding-right:1em;">
             <h1>The Alley Cats</h1>
-            <div class="divider"><img src="images/dividers/divider.png" alt="" /></div> 
+            <div class="divider" style="text-align: center;"><img src="images/dividers/divider.png" alt="" /></div> 
             <p>
               Seven-piece modern jazz band performing fresh, fun and modern
               arrangements of well-known tunes from classic children's films,
               TV themes, Disney, nursery rhymes and more!
             </p>
-            <div class="divider"><img src="images/dividers/divider.png" alt="" /></div> 
+            <div class="divider" style="text-align: center;"><img src="images/dividers/divider.png" alt="" /></div> 
             <p style="color:firebrick; font-weight:900; font-size: 1em;">
              We're back! <br/> We are delighted to be playing again at the <a href="https://www.nationaltrust.org.uk/AAWinterLights">Anglesey Abbey winter lights festival</a>, on 11 and 12 December 2021!
              </p>
