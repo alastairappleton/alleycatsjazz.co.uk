@@ -44,11 +44,6 @@
               arrangements of well-known tunes from classic children's films,
               TV themes, Disney, nursery rhymes and more!
             </p>
-            <div class="divider" style="text-align: center;"><img src="images/dividers/divider.png" alt="" /></div> 
-            <p style="color:firebrick; font-weight:900; font-size: 1em;">
-             We're back! <br/> We are delighted to be playing again at the <a href="https://www.nationaltrust.org.uk/AAWinterLights">Anglesey Abbey winter lights festival</a>, on 11 and 12 December 2021!
-             </p>
-
           </div>
           <div id="home-right">
             <!-- This isn't a column, so the div just fits the image. It does NOT flex to take up spare space shared with left-hand side -->
