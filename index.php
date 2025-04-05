@@ -44,11 +44,6 @@
               arrangements of well-known tunes from classic children's films,
               family-favourite TV shows, nursery rhymes and more!
             </p>
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 79156726b4baf7518bb1605d4e6997020787d922
           </div>
           <div id="home-right">
             <!-- This isn't a column, so the div just fits the image. It does NOT flex to take up spare space shared with left-hand side -->
