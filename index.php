@@ -42,7 +42,7 @@
             <p>
               Seven-piece modern jazz band performing fresh, fun and modern
               arrangements of well-known tunes from classic children's films,
-              TV themes, Disney, nursery rhymes and more!
+              family-favourite TV shows, nursery rhymes and more!
             </p>
 <<<<<<< HEAD
 
