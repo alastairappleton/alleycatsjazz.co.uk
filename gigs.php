@@ -47,10 +47,14 @@
                     </p>
 
                     <h3>Upcoming gigs</h3>
+                    <p>We haven't got any upcoming gigs at the moment, but we're hoping to set something up soon!</p>
+
+                    <div class="divider"><img src="images/dividers/divider.png" alt="" /></div>
+
+                    <h3>Previous gigs</h3>
                     <table>
                         <tbody>
-
-                        <tr>
+                            <tr>
                             <td>11&ndash;12 December 2021</td>
                                 <td>
                                     Due to the Covid pandemic, we've been quiet for a long time&hellip; but we are delighted to finally be back playing again at this year's Winter Lights festival, <a
@@ -58,14 +62,6 @@
                                         Abbey</a>, Cambridge.
                                 </td>
                             </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="divider"><img src="images/dividers/divider.png" alt="" /></div>
-
-                    <h3>Previous gigs</h3>
-                    <table>
-                        <tbody>
                            <tr>
                                 <td>15 December 2019</td>
                                 <td>
